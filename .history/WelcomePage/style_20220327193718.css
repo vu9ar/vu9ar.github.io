@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* Splash */
+
+.intro {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #161616;
+    transition: 1s;
+}
+
+.logo-header {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+}
+
+.Logo {
+    position: relative;
+    display: inline-block;
+    bottom: -20px;
+    opacity: 0;
+}
+
+.Logo.active {
+    bottom: 0;
+    opacity: 1;
+    transition: ease-in-out 0.5s;
+}
+
+.Logo.fade {
+    bottom: 150px;
+    opacity: 0;
+    transition: ease-in-out 0.5;
+}
+
+.button {
+    width: 200px;
+    height: 50px;
+    left: 40.3%;
+    top: 450px;
+    margin-top: 10px;
+    bottom: 50%;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    transition: ease-out 0.3s;
+    font-size: 1rem;
+    outline: none;
+    border: 3px solid black;
+    position: relative;
+    z-index: 1;
+    background-color: black;
+}
+
+.button:hover {
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.button:before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: "";
+    background-color: #42BFB2;
+}
+
+.button:hover:before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
+}
+
+.headerWelcome {
+    position: fixed;
+    margin-top: 23%;
+    margin-left: 28%;
+    width: 100%;
+    height: 60px;
+    font-size: 33px;
+}
